@@ -42,6 +42,7 @@ public class SelectionSort {
 			int j = indexLowest(array, i);
 			swapElements(array, i, j);
 		}
+
 	}
 
 	/**
@@ -49,6 +50,11 @@ public class SelectionSort {
 	 */
 	public static void main(String[] args) {
 		int[] array = {2, 5, 6, 1, 3};
+		//1,5,6,2,3
+		//1,2,6,5,3
+		//1,2,5,6,3
+		//1,2,3,6,5
+		//1,2,3,5,6
 		selectionSort(array);
 		System.out.println(Arrays.toString(array));
 	}
